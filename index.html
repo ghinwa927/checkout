@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Checkout</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Progress Bar -->
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+
+  <!-- Success Message -->
+  <div id="successMessage" class="success-screen">
+    <div class="success-card">
+      <i class="fa-solid fa-circle-check"></i>
+      <h1>Payment Successful!</h1>
+      <p>Your order has been placed successfully.</p>
+    </div>
+  </div>
+
+  <!-- Checkout -->
+  <div id="checkoutWrapper" class="checkout-wrapper">
+
+    <div class="checkout-section">
+      <div class="checkout-header">
+        <h1>Checkout</h1>
+        <p>Complete your order</p>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="checkout-step active" data-step="0">
+        <div class="step-header">
+          <div class="step-circle"><i class="fa-solid fa-user"></i></div>
+          <h2>Personal Information</h2>
+        </div>
+        <div class="step-content">
+          <input type="text" id="name" placeholder="John Smith">
+          <div class="error-message"></div>
+          <input type="email" id="email" placeholder="john@example.com">
+          <div class="error-message"></div>
+          <input type="tel" id="phone" placeholder="+961 71 123456">
+          <div class="error-message"></div>
+          <button id="toStep2">Continue to Address</button>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="checkout-step" data-step="1">
+        <div class="step-header">
+          <div class="step-circle"><i class="fa-solid fa-location-dot"></i></div>
+          <h2>Address Information</h2>
+        </div>
+        <div class="step-content">
+          <input type="text" id="country" placeholder="Country">
+          <div class="error-message"></div>
+          <input type="text" id="city" placeholder="City">
+          <div class="error-message"></div>
+          <input type="text" id="street" placeholder="Street Address">
+          <div class="error-message"></div>
+          <input type="text" id="zip" placeholder="ZIP Code">
+          <div class="error-message"></div>
+          <div class="btn-group">
+            <button id="back1" class="secondary-btn">Back</button>
+            <button id="toStep3">Continue to Payment</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="checkout-step" data-step="2">
+        <div class="step-header">
+          <div class="step-circle"><i class="fa-solid fa-credit-card"></i></div>
+          <h2>Payment</h2>
+        </div>
+        <div class="step-content">
+          <input type="text" id="cardName" placeholder="Card Holder Name">
+          <div class="error-message"></div>
+          <input type="text" id="cardNumber" maxlength="19" placeholder="1234 5678 9012 3456">
+          <div class="error-message"></div>
+          <div class="payment-row">
+            <div>
+              <input type="text" id="expiry" maxlength="5" placeholder="MM/YY">
+              <div class="error-message"></div>
+            </div>
+            <div>
+              <input type="text" id="cvv" maxlength="3" placeholder="CVV">
+              <div class="error-message"></div>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button id="back2" class="secondary-btn">Back</button>
+            <button id="payBtn">Pay Now</button>
+          </div>
+        </div>
+ 
+      </div>
+
+    </div>
+     <!-- Summary -->
+  <aside class="summary">
+    <h3>Order Summary</h3>
+    <div class="summary-item"><span>Wireless Headphones</span><span>$120</span></div>
+    <div class="summary-item"><span>Phone Case</span><span>$20</span></div>
+    <div class="summary-item"><span>Shipping</span><span>$10</span></div>
+    <hr>
+    <div class="summary-total"><span>Total</span><span>$150</span></div>
+  </aside>
+  </div><!--end checkout wrapper class-->
+
+  <!-- Summary 
+  <aside class="summary">
+    <h3>Order Summary</h3>
+    <div class="summary-item"><span>Wireless Headphones</span><span>$120</span></div>
+    <div class="summary-item"><span>Phone Case</span><span>$20</span></div>
+    <div class="summary-item"><span>Shipping</span><span>$10</span></div>
+    <hr>
+    <div class="summary-total"><span>Total</span><span>$150</span></div>
+  </aside>-->
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
