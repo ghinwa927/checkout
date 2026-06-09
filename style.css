@@ -302,20 +302,46 @@ button:hover {
 }
 
 @media(max-width:768px) {
-  body { padding: 15px; }
-  .checkout-section { padding: 25px; }
-  .checkout-header h1 { font-size: 38px; }
-  .step-header h2 { font-size: 22px; }
-  .payment-row { grid-template-columns: 1fr; }
-  .btn-group { flex-direction: column; }
-  .summary { margin-bottom: 20px; }
-  .summary h3 { font-size: 26px; }
-  .summary-total { font-size: 20px; }
+  body {
+    padding: 15px; 
+  }
+  .checkout-section {
+    padding: 25px; 
+  }
+  .checkout-header h1 {
+    font-size: 38px;
+  }
+  .step-header h2 { 
+    font-size: 22px; 
+  }
+  .payment-row {
+    grid-template-columns: 1fr; 
+  }
+  .btn-group { 
+    flex-direction: column; 
+  }
+  .summary {
+    margin-bottom: 20px;
+  }
+  .summary h3 {
+    font-size: 26px; 
+  }
+  .summary-total { 
+    font-size: 20px;
+  }
 }
 
 @media(max-width:480px) {
-  .checkout-header h1 { font-size: 32px; }
-  .step-header h2 { font-size: 20px; }
-  .success-card { padding: 50px 25px; }
-  .success-card h1 { font-size: 34px; }
+  .checkout-header h1 { 
+    font-size: 32px; 
+  }
+  .step-header h2 { 
+    font-size: 20px;
+  }
+  .success-card {
+    padding: 50px 25px;
+  }
+  .success-card h1 { 
+    font-size: 34px; 
+  }
 }
