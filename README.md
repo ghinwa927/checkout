@@ -72,16 +72,16 @@ similar to real-world payment systems.
 ## Preview
 
 ### Personal Information Step
-![Step 1](images/step1.png)
+![Step 1](assets/step1.png)
 
 ### Address Information Step
-![Step 2](images/step2.png)
+![Step 2](assets/step2.png)
 
 ### Payment Step
-![Step 3](images/step3.png)
+![Step 3](assets/step3.png)
 
 ### Success Screen
-![Success](images/success.png)
+![Success](assets/success.png)
 
 ### Error Screen
-![Error](images/error.png)
+![Error](assets/error.png)
